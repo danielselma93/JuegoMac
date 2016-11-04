@@ -2,5 +2,78 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
-    <events />
+    <events>
+        <event-block sid="585093600747076">
+            <conditions>
+                <condition id="2" name="Key is down" sid="820469789615275" type="Keyboard">
+                    <param id="0" name="Key">40 (Down arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="735753711118734" type="pepa">
+                    <param id="0" name="Animation">&quot;agacharse&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="668861029407545">
+            <conditions>
+                <condition id="3" name="On key released" sid="894826056981030" type="Keyboard">
+                    <param id="0" name="Key">40 (Down arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="108460070605533" type="pepa">
+                    <param id="0" name="Animation">&quot;palante&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="818044468257941">
+            <conditions>
+                <condition id="2" name="Key is down" sid="164701009614015" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="823382175202216" type="pepa">
+                    <param id="0" name="Animation">&quot;atras&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="197375360463674">
+            <conditions>
+                <condition id="2" name="Key is down" sid="828256139075916" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="566206511688234" type="pepa">
+                    <param id="0" name="Animation">&quot;palante&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="570322346855461">
+            <conditions>
+                <condition id="2" name="Key is down" sid="479672596553697" type="Keyboard">
+                    <param id="0" name="Key">38 (Up arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="321981503810338" type="pepa">
+                    <param id="0" name="Animation">&quot;salto&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="805038535638132" type="System">
+                    <param id="0" name="Seconds">0.6</param>
+                </action>
+                <action id="4" name="Set animation" sid="579180266001113" type="pepa">
+                    <param id="0" name="Animation">&quot;palante&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>

@@ -9,8 +9,16 @@
     <app-id>com.mycompany.myapp</app-id>
     <unique-id>roec7bpsphol</unique-id>
     <saved-with-version>23900</saved-with-version>
-    <used-plugins />
-    <used-behaviors />
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
     <used-effects />
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -37,7 +45,140 @@
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
-    <object-folder />
+    <object-folder>
+        <object-type name="TiledBackground" sid="764751344829951">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="fondo" sid="248966238412449">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\2dam\Desktop\fondo.jpeg" />
+        </object-type>
+        <object-type name="pepa" sid="795224241317027">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="824328574673334">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="904379804611946">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="palante" pingpong="0" repeatcount="1" repeatto="0" sid="554576369349882" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\2dam\Desktop\48914814_144x108reves.png">
+                        <collision-poly>
+                            <point x="0.402778" y="0.537037" />
+                            <point x="0.5" y="0.148148" />
+                            <point x="0.611111" y="0.518519" />
+                            <point x="0.604167" y="0.5" />
+                            <point x="0.715278" y="0.62037" />
+                            <point x="0.5" y="0.87963" />
+                            <point x="0.305556" y="0.592593" />
+                            <point x="0.409722" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="salto" pingpong="0" repeatcount="1" repeatto="0" sid="197582294894606" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\2dam\Desktop\48914814_144x108saltoreves.png">
+                        <collision-poly>
+                            <point x="0.1875" y="0.25" />
+                            <point x="0.5" y="0.111111" />
+                            <point x="0.909722" y="0.12037" />
+                            <point x="0.715278" y="0.5" />
+                            <point x="0.666667" y="0.555556" />
+                            <point x="0.5" y="0.861111" />
+                            <point x="0.340278" y="0.546296" />
+                            <point x="0.236111" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="saltoesp" pingpong="0" repeatcount="1" repeatto="0" sid="744865982694167" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\2dam\Desktop\48914814_144x108salto.png">
+                        <collision-poly>
+                            <point x="0.0902778" y="0.12037" />
+                            <point x="0.5" y="0.111111" />
+                            <point x="0.8125" y="0.25" />
+                            <point x="0.763889" y="0.5" />
+                            <point x="0.659722" y="0.546296" />
+                            <point x="0.5" y="0.861111" />
+                            <point x="0.333333" y="0.555556" />
+                            <point x="0.284722" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="atras" pingpong="0" repeatcount="1" repeatto="0" sid="898906537154995" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\2dam\Desktop\48914814_144x108.png">
+                        <collision-poly>
+                            <point x="0.388889" y="0.518519" />
+                            <point x="0.5" y="0.222222" />
+                            <point x="0.597222" y="0.537037" />
+                            <point x="0.590278" y="0.5" />
+                            <point x="0.694444" y="0.592593" />
+                            <point x="0.5" y="0.87963" />
+                            <point x="0.284722" y="0.62037" />
+                            <point x="0.395833" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="agacharse" pingpong="0" repeatcount="1" repeatto="0" sid="494530921480926" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\2dam\Desktop\48914814_144x108agachada.png">
+                        <collision-poly>
+                            <point x="0.423611" y="0.564815" />
+                            <point x="0.5" y="0.277778" />
+                            <point x="0.729167" y="0.361111" />
+                            <point x="0.743056" y="0.5" />
+                            <point x="0.777778" y="0.703704" />
+                            <point x="0.5" y="0.87963" />
+                            <point x="0.486111" y="0.351852" />
+                            <point x="0.423611" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="agacharseatras" pingpong="0" repeatcount="1" repeatto="0" sid="845913736795780" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\2dam\Desktop\48914814_144x108agachadareves.png">
+                        <collision-poly>
+                            <point x="0.270833" y="0.361111" />
+                            <point x="0.5" y="0.277778" />
+                            <point x="0.576389" y="0.564815" />
+                            <point x="0.576389" y="0.5" />
+                            <point x="0.513889" y="0.351852" />
+                            <point x="0.5" y="0.87963" />
+                            <point x="0.222222" y="0.703704" />
+                            <point x="0.256944" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="583208927286530">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="173736368978425">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="494080160164088" speed="5">
+                    <frame duration="1" hotspotX="0.496614" hotspotY="0.434608" original-source="C:\Users\2dam\Desktop\depositphotos_91796046-Textures-for-platformers-icons.png">
+                        <collision-poly>
+                            <point x="0" y="0.136821" />
+                            <point x="0.155756" y="0.130784" />
+                            <point x="0.381489" y="0.134809" />
+                            <point x="0.553047" y="0.138832" />
+                            <point x="0.778781" y="0.122736" />
+                            <point x="0.972912" y="0.120724" />
+                            <point x="1" y="0.991952" />
+                            <point x="0" y="0.975855" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="482850878855741">
+            <plugin id="Keyboard" />
+        </object-type>
+    </object-folder>
     <families />
     <layout-folder>
         <layout>Layout 1.xml</layout>
@@ -47,7 +188,9 @@
         <event-sheet>Event sheet 1.xml</event-sheet>
         <event-sheet>Event sheet 2.xml</event-sheet>
     </event-folder>
-    <global-instances />
+    <global-instances>
+        <global-instance type="Keyboard" uid="5" />
+    </global-instances>
     <sounds-folder />
     <music-folder />
     <files-folder>
